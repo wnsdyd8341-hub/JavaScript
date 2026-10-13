@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class = "btn">로그인</button>
+    <button class="like">♡좋아요</button>
+    <script>
+        // let login=false;
+
+        // let btn = document.querySelector(".btn");
+        // btn.addEventListener("click",function(){
+        //     login = !login;
+        //     if(login){
+        //         alert("로그인 상태입니다");
+        //     }else{
+        //         alert("로그인 해주세요");
+        //     }
+        // })
+
+        let likes = document.querySelector(".like");
+        let like = false;
+
+        likes.addEventListener("click",()=>{
+            // 상태 토글 
+            like = !like;
+
+            if(like){
+                likes.textContent = "❤️좋아요";
+            }else{
+                likes.textContent = "♡ 좋아요";
+            }
+        })
+
+
+         
+    </script>
+</body>
+</html>

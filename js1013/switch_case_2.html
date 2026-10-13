@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let site = prompt("사이트 입력 :");
+        let url;
+
+        switch(site){
+            case "구글":
+                url = "https://www.google.com";
+                break;
+            case "네이버":
+                url = "https://www.naver.com";
+                break;
+            case "유튜브":
+                url = "https://www.youtube.com";
+                break;
+            default:
+                alert("사이트를 찾을 수 없습니다");
+                break;
+        }
+        if(url){
+            // 그 페이지에 여는것 _self 
+            window.open(url,"_self");
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>증감연산자</title>
+</head>
+<body>
+    <h2 class="counter">클릭횟수 : 0</h2>
+    <button class="indcrease">증가</button>
+    <button class="decrease">감소</button>
+    
+    
+
+    <script>
+        let counter = document.querySelector(".counter");
+        let count = 0;
+
+        let indcrease = document.querySelector(".indcrease");
+        let decrease = document.querySelector(".decrease");
+
+        indcrease.addEventListener("click",function(){
+            count++;
+            counter.textContent = `클릭횟수  ${count}`;
+        });
+        decrease.addEventListener("click",function(){
+            count--;
+            counter.textContent = `클릭횟수  ${count}`;
+        });
+
+    </script>
+        
+        
+</body>
+</html>
