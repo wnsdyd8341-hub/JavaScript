@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foreach</title>
+</head>
+<body>
+    <ul id="fruits">
+    </ul>
+    <script>
+        const fruits = ["사과", "바나나", "포도", "망고", "수박","사과", "바나나", "포도", "망고", "수박"];
+        let fruit = document.querySelector("#fruits");
+        // 반복문으로 풀어쓰면 i=0; i<fruits.length();i++ 
+        fruits.forEach((a,index)=>{
+            //fruit <- ul의 요소에 innerHTML해라
+            // <li> ${index+1} : ${a} </li> ui의 요소에 li 요소를 집어넣어라 이정도로 해석가능
+            fruit.innerHTML +=`<li>${index+1} : ${a}</li>`;
+        })
+    </script>
+</body>
+</html>
