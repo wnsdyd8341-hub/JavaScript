@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            gap: 20px;
+        }
+        li{width: 200px;
+        background-color: antiquewhite;}
+        li img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="productlist"></ul>
+    <script>
+        let list = document.querySelector(".productlist");
+
+        const products = [{name : "티셔츠", price : 15000, desc : "이쁜 티셔츠" , img :"images/jeans.jpg"},
+        {name : "티셔츠", price : 15000, desc : "이쁜 티셔츠", img :"images/shoes.jpg"},
+        {name : "청바지", price : 15000, desc : "이쁜 티셔츠" , img :"images/tshirt.jpg"}
+        ];
+        products.forEach((a) => {
+            list.innerHTML += `<li><img src =${a.img} alt = ${a.name}> <h3>${a.name}</h3> <p>${a.price.toLocaleString() }</p> <p>${a.desc}</p>  </li>`;      
+        });
+        
+
+
+
+    </script>
+</body>
+</html>
